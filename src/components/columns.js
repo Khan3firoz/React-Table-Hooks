@@ -1,11 +1,12 @@
 import { format } from 'date-fns'
+import {ColumnFilter} from './ColumnFilter'
 
 export const COLUMNS = [
   {
     Header: 'Id',
     Footer: 'Id',
     accessor: 'id',
-    // disableFilters: true,
+    disableFilters: true,
     // sticky: 'left'
   },
   {
@@ -31,22 +32,24 @@ export const COLUMNS = [
   {
     Header: 'Country',
     Footer: 'Country',
-    accessor: 'country'
+    accessor: 'country',
   },
   {
     Header: 'Phone',
     Footer: 'Phone',
-    accessor: 'phone'
+    accessor: 'phone',
+    Filter:ColumnFilter,
+
   },
   {
     Header: 'Email',
     Footer: 'Email',
-    accessor: 'email'
+    accessor: 'email',
   },
   {
     Header: 'Age',
     Footer: 'Age',
-    accessor: 'age'
+    accessor: 'age',
   },
 ]
 
